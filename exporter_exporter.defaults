@@ -1,1 +1,5 @@
-EXPEXP_FLAGS=""
+EXPEXP_FLAGS="-web.listen-address= -web.tls.listen-address=:9998
+ -web.tls.cert=/etc/prometheus/ssl/prom_node_cert.pem
+ -web.tls.key=/etc/prometheus/ssl/prom_node_key.pem
+ -web.tls.ca=/etc/prometheus/ssl/prometheus_cert.pem
+ -web.tls.verify"
