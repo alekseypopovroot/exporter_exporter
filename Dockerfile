@@ -7,4 +7,4 @@ RUN go build .
 
 FROM alpine
 COPY --from=build /src/exporter_exporter /usr/bin/
-ENTRYPOINT ["/usr/bin/exporter_exporter", $EXPEXP_FLAGS]
+ENTRYPOINT /usr/bin/exporter_exporter $EXPEXP_FLAGS
